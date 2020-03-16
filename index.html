@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css"> 
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <title>MyAdmin</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo text-darken-2">MyAdmin</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">DashBoard</a></li>
+                        <li><a href="post.html">Posts</a></li>
+                        <li><a href="categorie.html">Catégories</a></li>
+                        <li><a href="comment.html">Comments</a></li>
+                        <li><a href="user.html">Users</a></li>
+                        <li><a href="#mobile-nav"><i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li class="" style="background-image: url(images.jfif); background-attachment: fixed; background-size: 100% 100%; padding: 10px;">
+            <img src="image.jfif" class="responsive-img circle" width="75px" height="75px">
+            <p>ABODE Rabiou <br> <small>rabiou.abode@codeloccol.org</small></p>
+        </li>
+        <li><a href="index.html"><i class="material-icons">dashboard</i> DashBoard</a></li>
+        <li><a href="post.html">Posts</a></li>
+        <li><a href="categorie.html">Catégories</a></li>
+        <li><a href="comment.html">Comments</a></li>
+        <li><a href="user.html">Users</a></li>
+        <hr>
+        <li><a href="#" class="disabled">Account Controls</a></li>
+        <li><a href="#">LogOut</a></li>
+    </ul>
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m3 center white-text">
+                <div class="card-panel z-depth-1 blue">
+                    <i class="material-icons medium">person</i>
+                    <h5>Monthly Visitors</h5>
+                    <h5>26025899</h5>
+                    <div class="progress grey">
+                        <div class="determinate white" style="width: 70%;"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col s12 m3 center">
+                <div class="card-panel z-depth-1">
+                    <i class="material-icons medium">edit</i>
+                    <h5>Blog Post</h5>
+                    <h5>952</h5>
+                    <div class="progress grey">
+                        <div class="determinate blue" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 center white-text">
+                <div class="card-panel z-depth-1 blue">
+                    <i class="material-icons medium">chat</i>
+                    <h5>Comments</h5>
+                    <h5>25694</h5>
+                    <div class="progress grey">
+                        <div class="determinate white" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 center">
+                <div class="card-panel z-depth-1">
+                    <i class="material-icons medium">people</i>
+                    <h5>Users</h5>
+                    <h5>300</h5>
+                    <div class="progress grey">
+                        <div class="determinate blue" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="setion">
+        <div class="row blue lighten-4">
+            <div class="col s12 m8">
+                <div class="card-panel white">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <div class="row">
+                        <p><strong>Latest Comments</strong></p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <img src="image.jfif" width="25px" height="25px" class="responsive-img circle"> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, unde?ouomata</span> <br><p><small class="green-text">Approve</small> <small class="red-text">Deny</small></p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <img src="image.jfif" width="25px" height="25px" class="responsive-img circle"> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, unde?ouomata</span> <br><p><small class="green-text">Approve</small> <small class="red-text">Deny</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section grey lighten-5">
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="card-panel white">
+                    <h6>Posts</h6>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Post 1</td>
+                            <td>Web Development</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                        <tr>
+                            <td>Post 2</td>
+                            <td>Graphic Design</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                        <tr>
+                            <td>Post 3</td>
+                            <td>Tech Gadget</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel white">
+                    <h5>Quick Todos</h5>
+                <div class="input-field">
+                    <input type="text" placeholder="Add Todo...">
+                </div>
+                <table>
+                    <tr>
+                        <td>Todo One</td>
+                        <td><i class="material-icons green-text">close</i></td>
+                    </tr>
+                    <tr>
+                        <td>Todo Two</td>
+                        <td><i class="material-icons green-text">close</i></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section blue">
+        <div class="row">
+            <div class="center white-text">
+                <p><small>MyAdmin Codeloccol Copyright © 2020</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">close</i>
+        </a>
+        <ul>
+            <li><a href="#modal1" class="btn-floating blue modal-trigger"><i class="material-icons">edit</i></a></li>
+            <li><a href="#modal2" class="btn-floating blue modal-trigger"><i class="material-icons">folder</i></a></li>
+            <li><a href="#modal3" class="btn-floating blue modal-trigger"><i class="material-icons">people</i></a></li>
+        </ul>
+    </div>
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <h5>Add Post</h5>
+            <div class="input-field">
+                <input type="text" placeholder="Title">
+            </div>
+            <div class="input-field">
+                <label for="category">Category</label>
+                <select>
+                    <option value="Select Option" disabled selected>Select Option</option>
+                    <option value="Dev Web">Dev Web</option>
+                    <option value="Dev Opps">Dev Opps</option>
+                </select>
+            </div>
+            <div>
+				<textarea name="editor1"></textarea>
+			    <script>
+				CKEDITOR.replace( 'editor1' );
+			    </script>
+			</div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-blue btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <h5>Add Category</h5>
+            <div class="input-field">
+                <input type="text" placeholder="Title">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-blue btn blue">SUBMIT</a>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <h5>Add User</h5>
+            <div class="input-field">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-blue btn blue">SUBMIT</a>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('select').formSelect();
+                $('#modal2').modal();
+                $('#modal1').modal();
+                $('#modal3').modal();
+                $('.fixed-action-btn').floatingActionButton();
+            });  
+        </script>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+</body>
+</html>

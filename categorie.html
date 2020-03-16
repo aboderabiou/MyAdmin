@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css"> 
+    <title>MyAdmin</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo text-darken-2">MyAdmin</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">DashBoard</a></li>
+                        <li><a href="post.html">Posts</a></li>
+                        <li><a href="categorie.html">Catégories</a></li>
+                        <li><a href="comment.html">Comments</a></li>
+                        <li><a href="user.html">Users</a></li>
+                        <li><a href="#mobile-nav"><i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li class="" style="background-image: url(images.jfif); background-attachment: fixed; background-size: 100% 100%; padding: 10px;">
+            <img src="image.jfif" class="responsive-img circle" width="75px" height="75px">
+            <p>ABODE Rabiou <br> <small>rabiou.abode@codeloccol.org</small></p>
+        </li>
+        <li><a href="index.html"><i class="material-icons">dashboard</i> DashBoard</a></li>
+        <li><a href="post.html">Posts</a></li>
+        <li><a href="categorie.html">Catégories</a></li>
+        <li><a href="comment.html">Comments</a></li>
+        <li><a href="user.html">Users</a></li>
+        <hr>
+        <li><a href="#" class="disabled">Account Controls</a></li>
+        <li><a href="#">LogOut</a></li>
+    </ul>
+    <div class="section">
+        <div class="container">
+            <div class="row z-depth-1" style="padding: 10px;">
+                <h6>Categories</h6>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date Created</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Oct 28, 2019</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Design</td>
+                            <td>Oct 29, 2019</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tech Gadget</td>
+                            <td>Oct 30, 2019</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                        <tr>
+                            <td>Other</td>
+                            <td>......</td>
+                            <td><span class="btn blue">DETAILS</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
+                    <li class="active blue"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section blue">
+        <div class="row">
+            <div class="center white-text">
+                <p><small>MyAdmin Codeloccol Copyright © 2020</small></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('#loginModal').modal();
+                $('select').formSelect();
+            });  
+        </script>
+</body>
+</html>
